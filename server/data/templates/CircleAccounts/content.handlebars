@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <style>
+            {#asset flex.css @encoding=utf8}
+            {#asset Member styles.css @encoding=utf8}
+        </style>
+        <body>
+            <div style="width: 100%; text-align: center">
+                <h1 class="title">영공클럽 {{year}}년 {{month}}월 지출내역</h1>
+            </div>
+            <div class="member-box">
+                <table cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <td width="4%">
+                            월
+                        </td>
+                        <td width="4%">
+                            일
+                        </td>
+                        <td width="14%">
+                            항목
+                        </td>
+                        <td width="24%">
+                            내용
+                        </td>
+                        <td width="14%">
+                            수입
+                        </td>
+                        <td width="14%">
+                            지출
+                        </td>
+                        <td width="14%">
+                            잔액
+                        </td>
+                        <td width="12%">
+                            비고
+                        </td>
+                    </tr>
+                    
+                    {{#each accounts}}
+                    <tr>
+                        <td>{{month}}</td>
+                        <td>{{date}}</td>
+                        <td>{{type}}</td>
+                        <td>{{title}}</td>
+                        <td>{{in}}</td>
+                        <td>{{out}}</td>
+                        <td>{{balance}}</td>
+                        <td>{{desc}}</td>
+                    </tr>
+                    {{/each}}
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>합계</td>
+                        <td>{{total.in}}</td>
+                        <td>{{total.out}}</td>
+                        <td>{{total.balance}}</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </body>
+    </head>
+</html>

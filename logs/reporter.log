@@ -1,0 +1,312 @@
+2018-01-07T11:03:13.053Z - info: Initializing jsreport@1.9.2 in development mode using configuration file: none
+2018-01-07T11:03:13.053Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-07T11:03:13.053Z - info: Searching for available extensions in D:\Develop\simplega\
+2018-01-07T11:03:13.084Z - info: Extensions location cache not found, crawling directories
+2018-01-07T11:03:17.198Z - info: Found 30 extensions
+2018-01-07T11:03:17.293Z - debug: Writing extension locations cache to C:\Users\BAEK-N~1\AppData\Local\Temp\jsreport\core\locations.json
+2018-01-07T11:03:17.293Z - debug: Discovered 30 extensions
+2018-01-07T11:03:17.293Z - info: Using extension import-export
+2018-01-07T11:03:18.054Z - info: Using extension tags
+2018-01-07T11:03:18.085Z - info: Using extension templates
+2018-01-07T11:03:18.108Z - info: Using extension jsrender
+2018-01-07T11:03:18.111Z - info: Using extension authentication
+2018-01-07T11:03:18.495Z - debug: Extension authentication was disabled
+2018-01-07T11:03:18.495Z - info: Using extension cli
+2018-01-07T11:03:18.495Z - info: Using extension handlebars
+2018-01-07T11:03:18.495Z - info: Using extension debug
+2018-01-07T11:03:18.495Z - info: Using extension express
+2018-01-07T11:03:18.636Z - info: Using extension fop-pdf
+2018-01-07T11:03:18.651Z - info: Using extension phantom-pdf
+2018-01-07T11:03:18.803Z - info: Using extension fs-store
+2018-01-07T11:03:19.163Z - debug: Extension fs-store was disabled
+2018-01-07T11:03:19.163Z - info: Using extension authorization
+2018-01-07T11:03:19.178Z - debug: Extension authorization was disabled
+2018-01-07T11:03:19.178Z - info: Using extension images
+2018-01-07T11:03:19.194Z - info: Using extension child-templates
+2018-01-07T11:03:19.194Z - info: Using extension browser-client
+2018-01-07T11:03:19.194Z - info: Using extension licensing
+2018-01-07T11:03:19.335Z - info: Using extension data
+2018-01-07T11:03:19.335Z - info: Using extension text
+2018-01-07T11:03:19.350Z - info: Using extension reports
+2018-01-07T11:03:19.350Z - info: Using extension resources
+2018-01-07T11:03:19.350Z - info: Using extension base
+2018-01-07T11:03:19.366Z - info: Using extension studio
+2018-01-07T11:03:19.678Z - info: Using extension html-to-xlsx
+2018-01-07T11:03:19.892Z - info: Using extension scripts
+2018-01-07T11:03:19.908Z - info: Using extension assets
+2018-01-07T11:03:19.939Z - info: Using extension scheduling
+2018-01-07T11:03:20.177Z - info: Using extension xlsx
+2018-01-07T11:03:20.832Z - info: Using extension sample-template
+2018-01-07T11:03:20.847Z - debug: Creating samples is disabled
+2018-01-07T11:03:20.847Z - info: Using extension public-templates
+2018-01-07T11:03:20.863Z - debug: Extension public-templates was disabled
+2018-01-07T11:03:20.957Z - info: Creating memory store
+2018-01-07T11:03:21.162Z - info: Configuring routes for existing express app.
+2018-01-07T11:03:21.336Z - info: Using existing server instance.
+2018-01-07T11:03:21.336Z - info: Verifying license key free
+2018-01-07T11:03:21.351Z - info: Using free license
+2018-01-07T11:03:21.351Z - info: reporter initialized
+2018-01-07T11:11:06.687Z - info: Starting rendering request 1 (user: null) requestId=1
+2018-01-07T11:11:06.691Z - info: Rendering anonymous template { recipe:phantom-pdf,engine:jsrender} requestId=1
+2018-01-07T11:11:06.693Z - debug: Inline data specified. requestId=1
+2018-01-07T11:11:06.710Z - debug: Resources not defined for this template. requestId=1
+2018-01-07T11:11:06.712Z - debug: Base url not specified, skipping its injection. requestId=1
+2018-01-07T11:11:06.713Z - debug: Rendering engine jsrender requestId=1
+2018-01-07T11:11:16.760Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:7:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=1
+2018-01-07T11:11:54.274Z - info: Starting rendering request 2 (user: null) requestId=2
+2018-01-07T11:11:54.277Z - info: Rendering anonymous template { recipe:phantom-pdf,engine:jsrender} requestId=2
+2018-01-07T11:11:54.277Z - debug: Inline data specified. requestId=2
+2018-01-07T11:11:54.288Z - debug: Resources not defined for this template. requestId=2
+2018-01-07T11:11:54.289Z - debug: Base url not specified, skipping its injection. requestId=2
+2018-01-07T11:11:54.289Z - debug: Rendering engine jsrender requestId=2
+2018-01-07T11:12:04.333Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:7:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=2
+2018-01-07T11:13:54.279Z - info: Starting rendering request 3 (user: null) requestId=3
+2018-01-07T11:13:54.285Z - info: Rendering anonymous template { recipe:phantom-pdf,engine:jsrender} requestId=3
+2018-01-07T11:13:54.286Z - debug: Inline data specified. requestId=3
+2018-01-07T11:13:54.306Z - debug: Resources not defined for this template. requestId=3
+2018-01-07T11:13:54.309Z - debug: Base url not specified, skipping its injection. requestId=3
+2018-01-07T11:13:54.311Z - debug: Rendering engine jsrender requestId=3
+2018-01-07T11:14:04.347Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:7:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=3
+2018-01-07T11:17:01.002Z - info: Initializing jsreport@1.9.2 in development mode using configuration file: none
+2018-01-07T11:17:01.003Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-07T11:17:01.008Z - info: Searching for available extensions in D:\Develop\simplega\
+2018-01-07T11:17:01.047Z - info: Extensions location cache contains up to date information, skipping crawling in D:\Develop\simplega\node_modules\
+2018-01-07T11:17:01.167Z - info: Found 30 extensions
+2018-01-07T11:17:01.226Z - debug: Writing extension locations cache to C:\Users\BAEK-N~1\AppData\Local\Temp\jsreport\core\locations.json
+2018-01-07T11:17:01.232Z - debug: Discovered 30 extensions
+2018-01-07T11:17:01.234Z - info: Using extension import-export
+2018-01-07T11:17:01.920Z - info: Using extension tags
+2018-01-07T11:17:01.946Z - info: Using extension templates
+2018-01-07T11:17:01.954Z - info: Using extension jsrender
+2018-01-07T11:17:01.957Z - info: Using extension authentication
+2018-01-07T11:17:02.275Z - debug: Extension authentication was disabled
+2018-01-07T11:17:02.275Z - info: Using extension cli
+2018-01-07T11:17:02.277Z - info: Using extension handlebars
+2018-01-07T11:17:02.282Z - info: Using extension debug
+2018-01-07T11:17:02.285Z - info: Using extension express
+2018-01-07T11:17:02.396Z - info: Using extension fop-pdf
+2018-01-07T11:17:02.415Z - info: Using extension phantom-pdf
+2018-01-07T11:17:02.478Z - info: Using extension fs-store
+2018-01-07T11:17:02.787Z - debug: Extension fs-store was disabled
+2018-01-07T11:17:02.787Z - info: Using extension authorization
+2018-01-07T11:17:02.792Z - debug: Extension authorization was disabled
+2018-01-07T11:17:02.792Z - info: Using extension images
+2018-01-07T11:17:02.807Z - info: Using extension child-templates
+2018-01-07T11:17:02.814Z - info: Using extension browser-client
+2018-01-07T11:17:02.818Z - info: Using extension licensing
+2018-01-07T11:17:02.951Z - info: Using extension data
+2018-01-07T11:17:02.954Z - info: Using extension text
+2018-01-07T11:17:02.957Z - info: Using extension reports
+2018-01-07T11:17:02.965Z - info: Using extension resources
+2018-01-07T11:17:02.969Z - info: Using extension base
+2018-01-07T11:17:02.971Z - info: Using extension studio
+2018-01-07T11:17:03.262Z - info: Using extension html-to-xlsx
+2018-01-07T11:17:03.487Z - info: Using extension scripts
+2018-01-07T11:17:03.495Z - info: Using extension assets
+2018-01-07T11:17:03.522Z - info: Using extension scheduling
+2018-01-07T11:17:03.785Z - info: Using extension xlsx
+2018-01-07T11:17:04.488Z - info: Using extension sample-template
+2018-01-07T11:17:04.493Z - debug: Creating samples is disabled
+2018-01-07T11:17:04.494Z - info: Using extension public-templates
+2018-01-07T11:17:04.504Z - debug: Extension public-templates was disabled
+2018-01-07T11:17:04.570Z - info: Creating memory store
+2018-01-07T11:17:04.720Z - info: Configuring routes for existing express app.
+2018-01-07T11:17:04.853Z - info: Using existing server instance.
+2018-01-07T11:17:04.854Z - info: Verifying license key free
+2018-01-07T11:17:04.858Z - info: Using free license
+2018-01-07T11:17:04.860Z - info: reporter initialized
+2018-01-07T11:18:00.472Z - info: Starting rendering request 1 (user: null) requestId=1
+2018-01-07T11:18:00.475Z - info: Rendering anonymous template { recipe:phantom-pdf,engine:jsrender} requestId=1
+2018-01-07T11:18:00.476Z - debug: Inline data specified. requestId=1
+2018-01-07T11:18:00.497Z - debug: Resources not defined for this template. requestId=1
+2018-01-07T11:18:00.500Z - debug: Base url not specified, skipping its injection. requestId=1
+2018-01-07T11:18:00.502Z - debug: Rendering engine jsrender requestId=1
+2018-01-07T11:18:10.550Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:9:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=1

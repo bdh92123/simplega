@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <style>
+            {#asset flex.css @encoding=utf8}
+            {#asset Member styles.css @encoding=utf8}
+        </style>
+        <body>
+            <div style="width: 100%; text-align: center">
+                <h1 class="title">영공클럽 {{year}}년 회비 입금내역</h1>
+            </div>
+            <div class="member-box">
+                <table cellpadding="0" cellspacing="0" border="1">
+                    <tr>
+                        <td style="text-align: center">
+                            번 호
+                        </td>
+                        <td style="text-align: center">
+                            성 명
+                        </td>
+                        {{#each (months)}}
+                        <td width="7%" style="text-align: center">
+                            {{./this}}월
+                        </td>
+                        {{/each}}
+                    </tr>
+                    
+                    {{#each members}}
+                    <tr>
+                        <td style="text-align: center">{{add @index 1}}</td>
+                        <td style="text-align: center">
+                            {{name}}
+                        </td>
+                        {{#each (months)}}
+                        <td style="text-align: center">
+                            {{lookup (lookup ../../dues ../id) this}}
+                        </td>
+                        {{/each}}
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+        </body>
+    </head>
+</html>

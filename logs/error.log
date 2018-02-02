@@ -1,0 +1,192 @@
+2018-01-07T11:11:16.760Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:7:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=1
+2018-01-07T11:12:04.333Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:7:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=2
+2018-01-07T11:14:04.348Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:7:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=3
+2018-01-07T11:18:10.550Z - error: Error when processing render request Error during rendering report: Timeout error during executing script Error: Timeout error during executing script
+    at Timeout._onTimeout (D:\Develop\simplega\node_modules\script-manager\lib\manager-processes.js:24:8)
+    at ontimeout (timers.js:475:11)
+    at Timer.unrefdHandle (timers.js:588:5)
+From previous event:
+    at invokeRender (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:85:88)
+    at D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:147:12
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+From previous event:
+    at module.exports (D:\Develop\simplega\node_modules\jsreport-core\lib\render\render.js:145:42)
+    at Reporter.render (D:\Develop\simplega\node_modules\jsreport-core\lib\reporter.js:174:10)
+    at Function.render (D:\Develop\simplega\node_modules\jsreport\index.js:54:33)
+    at D:\Develop\simplega\server\routes\users.js:9:12
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Develop\simplega\server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:47:12)
+    at D:\Develop\simplega\server\express-reload.js:32:20
+    at Layer.handle [as handle_request] (D:\Develop\simplega\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:317:13)
+    at D:\Develop\simplega\server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Develop\simplega\server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\serve-static\index.js:121:7)
+    at emitOne (events.js:116:13)
+    at SendStream.emit (events.js:211:7)
+    at SendStream.error (D:\Develop\simplega\server\node_modules\send\index.js:275:17)
+    at SendStream.onStatError (D:\Develop\simplega\server\node_modules\send\index.js:426:12)
+    at next (D:\Develop\simplega\server\node_modules\send\index.js:736:16)
+    at onstat (D:\Develop\simplega\server\node_modules\send\index.js:725:14)
+    at FSReqWrap.oncomplete (fs.js:152:21) requestId=1
