@@ -37,6 +37,7 @@
     <form method="post" action="/reporting/api/report" ref="downloadForm" target="_blank">
       <input type="hidden" name="template[name]" value="CircleMembers"/>
       <input type="hidden" name="data[year]" :value="year"/>
+      <input type="hidden" name="options[Content-Disposition]" value="inline; filename=report.pdf"/>
     </form>
   </q-layout>
 </template>
@@ -88,6 +89,14 @@ export default {
     downloadReport (template) {
       global.a=this.$refs
       this.$refs.downloadForm['template[name]'].value = template
+      let reportName = "report";
+      if(template == 'CircleMembers') {
+        reportName = this.year + '_MEMBERS'
+      } else {
+    reportName = this.year + '_MEMBERS_DUE'
+      }
+
+      this.$refs.downloadForm['options[Content-Disposition]'].value="inline; filename=" + reportName + ".pdf"
       this.$refs.downloadForm.submit()
     },
     loadMembers() {

@@ -36,6 +36,10 @@ let getAccountType = function (id) {
   return accountTypeMap[id]
 }
 
+Number.prototype.format = function(n, x) {
+    var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\.' : '$') + ')';
+    return this.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, 'g'), '$&,');
+};
 
 function beforeRender(req, res, done) {
     // the report parameter country can be send from the client API request
@@ -71,17 +75,17 @@ function beforeRender(req, res, done) {
                 date: date.getDate(),
                 type: getAccountType(account.account_type_id).name,
                 title: account.title,
-                in: account.inout == 0 ? account.price : '',
-                out: account.inout == 1 ? account.price : '',
+                in: account.inout == 0 ? account.price.format() : '',
+                out: account.inout == 1 ? account.price.format() : '',
                 balance: '',
                 desc: account.desc
             }
         })
         req.data.accounts = accounts;
         req.data.total = {
-            in: totalIn,
-            out: totalOut,
-            balance: totalIn - totalOut
+            in: totalIn.format(),
+            out: totalOut.format(),
+            balance: (totalIn - totalOut).format()
         };
         done();
     })

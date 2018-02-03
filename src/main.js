@@ -15,6 +15,11 @@ import Quasar, * as All from 'quasar'
 import router from './router'
 import axios from 'axios'
 
+Number.prototype.format = function(n, x) {
+    var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\.' : '$') + ')';
+    return this.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, 'g'), '$&,');
+};
+
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 Vue.use(Quasar, {

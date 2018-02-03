@@ -5,8 +5,11 @@ const classes = {
   'ASSOSIATE': '준회원',
   'REGULAR': '정회원',
   'PRESIDENT': '회장',
+  'VICE_PRESIDENT': '부회장',
   'GENERAL_AFFAIRS': '총무',
-  'ADVISOR': '고문'
+  'ADVISOR': '고문',
+  'COACH': '코치',
+  'AUDIT': '감사'
 }
 
 let getClassesLabel = function (classKey) {

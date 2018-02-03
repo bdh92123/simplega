@@ -39,7 +39,7 @@
         </q-item-main>
         <q-item-side right>
           <q-item-tile>{{ getAccountType(account.account_type_id).name }} - {{ new Date(account.date).toLocaleDateString() }}</q-item-tile>
-          <q-item-tile color="black">{{ account.price }}원</q-item-tile>
+          <q-item-tile color="black">{{ account.price.format() }}원</q-item-tile>
         </q-item-side>
       </q-item>
     </q-list>
@@ -47,19 +47,19 @@
       <q-item>
         <q-item-main label="총 수입"/>
         <q-item-side right>
-          <q-item-tile color="black">{{ totalIn }}원</q-item-tile>
+          <q-item-tile color="black">{{ totalIn.format() }}원</q-item-tile>
         </q-item-side>
       </q-item>
       <q-item>
         <q-item-main label="총 지출"/>
         <q-item-side right>
-          <q-item-tile color="black">{{ totalOut }}원</q-item-tile>
+          <q-item-tile color="black">{{ totalOut.format() }}원</q-item-tile>
         </q-item-side>
       </q-item>
       <q-item>
         <q-item-main label="잔액"/>
         <q-item-side right>
-          <q-item-tile color="black">{{ totalRemain }}원</q-item-tile>
+          <q-item-tile color="black">{{ totalRemain.format() }}원</q-item-tile>
         </q-item-side>
       </q-item>
     </q-list>
@@ -67,6 +67,8 @@
       <input type="hidden" name="template[name]" value="CircleAccounts"/>
       <input type="hidden" name="data[year]" :value="year"/>
       <input type="hidden" name="data[month]" :value="month"/>
+      <input type="hidden" name="options[Content-Disposition]" :value="'inline; filename=' + year + '_' + month + '_ACCOUNTS.pdf'"/>
+      
     </form>
   </q-layout>
 </template>
@@ -134,6 +136,7 @@
       },
       addAccountDialog () {
         Dialog.create({
+          noBackdropDismiss: true,
           title: '출납 추가',
           message: '추가할 수입/지출 정보를 입력해주세요.',
           form: {
