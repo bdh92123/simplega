@@ -22,7 +22,10 @@ function beforeRender(req, res, done) {
     
     http.all([membersRequest, memberDuesRequest])
         .then(http.spread((membersResponse, memberDuesResponse) => {
-            req.data.members = membersResponse.data;
+            req.data.members = membersResponse.data.filter((member)=>{
+                return member.classes != 'GENERAL_AFFAIRS';
+            });
+            
             var memberDue = {};
             memberDuesResponse.data.forEach((due)=>{
                 var memberId = due.member_id;

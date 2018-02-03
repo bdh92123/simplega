@@ -10,3 +10,4 @@ cordova/plugins
 server/node_modules
 server/logs
 server/.idea
+server/data/storage
