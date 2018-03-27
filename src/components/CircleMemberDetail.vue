@@ -56,7 +56,7 @@
         </div>
         <div class="col-12">
           <q-checkbox v-model="checked" label="납부" />
-          <q-datetime v-model="due.pay_date" type="date" />
+          <q-datetime v-model="due.pay_date" type="date" :month-names='months' :day-names='days' ok-label='확인' clear-label='초기화' cancel-label='취소'/>
         </div>
         <div class="row col-12 justify-end">
           <div>
@@ -100,6 +100,12 @@ export default {
     }
   },
   computed: {
+    months () {
+      return ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+    },
+    days () {
+      return ['일', '월', '화', '수', '목', '금', '토']
+    },
     circleId () {
       return this.$route.params.circleId
     },

@@ -134,15 +134,15 @@
       getAccountType (id) {
         return getAccountType(id)
       },
-      addAccountDialog () {
-        Dialog.create({
+      showAccountDialog (account, handler) {
+		Dialog.create({
           noBackdropDismiss: true,
-          title: '출납 추가',
-          message: '추가할 수입/지출 정보를 입력해주세요.',
+          title: '출납 입력',
+          message: '수입/지출 정보를 입력해주세요.',
           form: {
             inout: {
               type: 'radio',
-              model: 0,
+              model: account.inout,
               inline: true,
               items: [
                 {
@@ -157,34 +157,34 @@
             },
             account_type_id: {
               type: 'radio',
-              model: accountTypes[0].id,
+              model: account.account_type_id,
               inline: true,
               items: accountTypes.map((accountType) => { return { label: accountType.name, value: accountType.id } })
             },
             title: {
               type: 'text',
               label: '제목',
-              model: ''
+              model: account.title
             },
             desc: {
               type: 'text',
               label: '부가설명',
-              model: ''
+              model: account.desc
             },
             price: {
               type: 'number',
               label: '금액',
-              model: 0
+              model: account.price
             },
             date: {
               type: 'number',
               label: '날짜',
-              model: 1
+              model: account.date
             }
           },
           buttons: [
             {
-              label: '추가',
+              label: '확인',
               preventClose: true,
               handler: (data, close) => {
                 let maxDate = new Date(this.year, this.month, 0).getDate()
@@ -196,18 +196,49 @@
                   Toast.create('제목을 입력하세요')
                   return
                 }
-                data.date = new Date(this.year, this.month - 1, data.date)
-                this.$http.post(`/api/circles/${this.circleId}/accounts`, data)
-                  .then((result) => {
-                    Toast.create('추가되었습니다.')
-                    this.loadAccounts()
-                  });
+                if (!data.price) {
+                  Toast.create('가격을 입력하세요')
+                  return
+                }
+                handler(data)
                 close()
               }
             },
             '취소'
           ]
         })
+      },
+      modifyAccountDialog (accountId) {
+      	this.$http.get(`/api/circles/${this.circleId}/accounts/${accountId}`).then((result) => {
+      		result.data.date = new Date(result.data.date).getDate()
+            this.showAccountDialog(result.data, (data) => {
+	      		data.date = new Date(this.year, this.month - 1, data.date)
+	            this.$http.put(`/api/circles/${this.circleId}/accounts/${accountId}`, data)
+	            .then((result) => {
+	                Toast.create('수정되었습니다.')
+	                this.loadAccounts()
+              	});
+      		})
+        })
+
+      	
+      },
+      addAccountDialog () {
+        this.showAccountDialog({
+        	inout: 0,
+        	account_type_id: 1,
+        	title: '',
+        	desc: '',
+        	price: 0,
+        	date: 1
+        }, (data) => {
+      		data.date = new Date(this.year, this.month - 1, data.date)
+            this.$http.post(`/api/circles/${this.circleId}/accounts`, data)
+              .then((result) => {
+                Toast.create('추가되었습니다.')
+                this.loadAccounts()
+              });
+      	})
       },
       loadAccounts () {
         this.$http.get(`/api/circles/${this.circleId}/accounts`, {
@@ -224,6 +255,13 @@
         ActionSheet.create({
           title: '메뉴',
           actions: [
+          	{
+              label: '수정',
+              icon: 'edit',
+              handler: () => {
+                this.modifyAccountDialog(account.id)
+              }
+            },
             {
               label: '삭제',
               icon: 'delete',

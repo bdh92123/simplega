@@ -46,9 +46,9 @@ accountRouter.route('/:accountId')
   })
   .put(function (req, res) {
     var circleId = parseInt(req.params.circleId);
-    var accountId = parseInt(req.params.account_id);
-    var accountTypeId = parseInt(req.params.account_type_id);
-    var inout = parseInt(req.params.inout);
+    var accountId = parseInt(req.params.accountId);
+    var accountTypeId = parseInt(req.body.account_type_id);
+    var inout = parseInt(req.body.inout);
     var title = req.body.title;
     var desc = req.body.desc;
     var price = req.body.price;

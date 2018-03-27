@@ -37,6 +37,7 @@ var jsreport = require('jsreport')({
 });
 
 jsreport.init().catch(function (e) {
+	console.log("jsreportcatch");
   console.error(e);
 });
 
@@ -65,6 +66,8 @@ function normalizePort(val) {
  */
 
 function onError(error) {
+	console.log("serverror");
+	console.log(error)
   if (error.syscall !== 'listen') {
     throw error;
   }
